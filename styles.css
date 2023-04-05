@@ -1,73 +1,88 @@
 body {
-  font-family: "Quicksand", sans-serif;
-  box-sizing: border-box;
+  font-family: "Opens Sans", sans-serif;
   margin: 0;
+  background-color: rgb(44, 41, 38);
 }
-
-ul {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 }
-#page-logo a {
-  color: brown;
-  font-weight: bold;
-  font-size: 24px;
-  padding: 16px;
-}
 
-header {
+#main-header {
+  height: 80px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  background-color: black;
-}
-nav ul {
-  display: flex;
-  flex-direction: row;
   align-items: center;
-}
-nav ul li a {
-  padding: 12px;
-  color: red;
-  font-size: 20px;
-  font-weight: 500;
+  background-color: rgb(29, 26, 24);
+  padding: 0 20px;
 }
 
-main {
-  background-color: brown;
-  padding-top: 10px;
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(238, 164, 80);
+  text-transform: uppercase;
 }
-h1 {
+
+#main-header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+#main-header li {
+  margin: 0 16px;
+}
+
+#main-header nav a {
+  color: rgb(185, 131, 31);
+  font-size: 20px;
+}
+
+#main-header nav a:hover {
+  color: rgb(228, 163, 44);
+}
+
+main h1 {
+  text-align: center;
+  color: rgb(238, 164, 80);
+  font-size: 48px;
+}
+#latests-products {
+  width: 80%;
+  margin: 50px auto;
+}
+
+#latests-products ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+.food-item {
+  background-color: rgb(228, 206, 182);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.food-item img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.food-item-content {
+  padding: 0 0 16px 0;
+
   text-align: center;
 }
 
-main ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.btn {
+  background-color: rgb(229, 157, 44);
+  color: white;
+  border-radius: 5px;
+  padding: 8px 24px;
 }
-
-main li {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-  align-items: center;
-  background-color: beige;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-}
-
-main li img {
-  width: 360px;
-  height: 260px;
-  object-fit: cover;
-}
-main li a {
-  background-color: orange;
-  padding: 10px;
-  margin-bottom: 20px;
-  color: beige;
+.btn:hover {
+  background-color: rgb(221, 134, 34);
 }
